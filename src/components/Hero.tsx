@@ -47,23 +47,23 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
           {/* Left Column - Content */}
-          <div className="space-y-8 animate-slide-left">
+          <div className="space-y-6 animate-slide-left">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-5xl font-bold leading-tight">
                 <span className="block text-white animate-slide-up">Hello, I'm</span>
                 <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-slide-up">
                   Panyam Sathya Teja
                 </span>
               </h1>
               
-              <div className="text-2xl md:text-3xl text-gray-300 h-12 flex items-center">
+              <div className="text-xl md:text-2xl text-gray-300 h-10 flex items-center">
                 <span className="border-r-2 border-purple-400 pr-2 animate-pulse">
                   {typedText}
                 </span>
               </div>
             </div>
 
-            <p className="text-lg text-gray-400 max-w-2xl leading-relaxed animate-slide-up">
+            <p className="text-base md:text-lg text-gray-400 max-w-2xl leading-relaxed animate-slide-up">
               Passionate about creating innovative web solutions that bridge the gap between 
               cutting-edge technology and exceptional user experiences. I specialize in building 
               scalable, performant applications using modern technologies.
@@ -73,18 +73,18 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
               <Button
                 size="lg"
-                className="glass glass-hover neon-glow px-8 py-3 text-lg font-medium group"
+                className="glass glass-hover neon-glow px-6 py-3 text-base font-medium group"
               >
-                <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+                <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                 Download CV
               </Button>
               
               <Button
                 variant="outline"
                 size="lg"
-                className="glass glass-hover border-purple-400/50 text-purple-400 hover:text-white px-8 py-3 text-lg font-medium group"
+                className="glass glass-hover border-purple-400/50 text-purple-400 hover:text-white px-6 py-3 text-base font-medium group"
               >
-                <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                 Contact Me
               </Button>
             </div>
@@ -97,7 +97,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-purple-400 transition-colors duration-200 hover:scale-110 transform"
               >
-                <Linkedin size={28} />
+                <Linkedin size={24} />
               </a>
               <a
                 href="https://github.com"
@@ -105,7 +105,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-purple-400 transition-colors duration-200 hover:scale-110 transform"
               >
-                <Github size={28} />
+                <Github size={24} />
               </a>
             </div>
           </div>
@@ -113,11 +113,11 @@ const Hero = () => {
           {/* Right Column - Profile Image */}
           <div className="flex justify-center lg:justify-end animate-scale-in">
             <div className="relative">
-              {/* Animated background circle */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-blue-400 animate-glow opacity-20 scale-110" />
+              {/* Synchronized animated background circle */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-blue-400 sync-float-glow scale-110" />
               
               {/* Profile image container */}
-              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full glass border-2 border-purple-400/30 overflow-hidden animate-float">
+              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full glass border-2 border-purple-400/30 overflow-hidden sync-float-glow">
                 <img
                   src="/placeholder.svg"
                   alt="Panyam Sathya Teja"
@@ -126,8 +126,8 @@ const Hero = () => {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-8 h-8 bg-purple-400 rounded-full animate-pulse" />
-              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-blue-400 rounded-full animate-pulse delay-1000" />
+              <div className="absolute -top-3 -right-3 w-6 h-6 bg-purple-400 rounded-full animate-pulse" />
+              <div className="absolute -bottom-3 -left-3 w-4 h-4 bg-blue-400 rounded-full animate-pulse delay-1000" />
             </div>
           </div>
         </div>

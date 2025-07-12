@@ -90,6 +90,18 @@ export default {
 					'0%, 100%': { transform: 'translateY(0px)' },
 					'50%': { transform: 'translateY(-20px)' }
 				},
+				'sync-float-glow': {
+					'0%, 100%': { 
+						transform: 'translateY(0px)',
+						opacity: '0.2',
+						scale: '1'
+					},
+					'50%': { 
+						transform: 'translateY(-20px)',
+						opacity: '1',
+						scale: '1.1'
+					}
+				},
 				'glow': {
 					'0%, 100%': { opacity: '0.5' },
 					'50%': { opacity: '1' }
@@ -115,6 +127,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
+				'sync-float-glow': 'sync-float-glow 6s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite',
 				'slide-up': 'slide-up 0.6s ease-out',
 				'slide-left': 'slide-left 0.6s ease-out',

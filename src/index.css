@@ -79,7 +79,7 @@ All colors MUST be HSL.
   }
   
   .section-padding {
-    @apply py-20 px-4 md:px-8 lg:px-16;
+    @apply py-16 px-4 md:px-8 lg:px-12;
   }
 }
 
@@ -96,16 +96,22 @@ All colors MUST be HSL.
   100% { background-position: 0% 50%; }
 }
 
-/* Typewriter effect */
-.typewriter {
-  overflow: hidden;
-  border-right: 2px solid;
-  white-space: nowrap;
-  animation: typewriter 2s steps(20) 1s both, blink 1s infinite;
+/* Synchronized float and glow animation */
+.sync-float-glow {
+  animation: sync-float-glow 6s ease-in-out infinite;
 }
 
-@keyframes blink {
-  50% { border-color: transparent; }
+@keyframes sync-float-glow {
+  0%, 100% { 
+    transform: translateY(0px);
+    opacity: 0.2;
+    scale: 1;
+  }
+  50% { 
+    transform: translateY(-20px);
+    opacity: 1;
+    scale: 1.1;
+  }
 }
 
 /* Floating particles */
