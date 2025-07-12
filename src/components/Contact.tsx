@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,23 +38,42 @@ const Contact = () => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-  };
+  e.preventDefault();
+
+  emailjs.send(
+    'service_d2tmjqa',     // e.g., service_abc123
+    'template_xi76alu',    // e.g., contact_template
+    {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+      title: 'Portfolio Contact Request'
+    },
+    'gIDnS9TIDIsvZ01RQ'      // e.g., public_xyz456
+  )
+  .then(() => {
+    alert('Message sent successfully!');
+    setFormData({ name: '', email: '', message: '' });
+  })
+  .catch((error) => {
+    console.error('EmailJS error:', error);
+    alert('Failed to send message.');
+  });
+};
+
 
   const contactInfo = [
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      value: "panyam.sathyateja@email.com",
-      link: "mailto:panyam.sathyateja@email.com"
+      value: "panyamsathyateja@gmail.com",
+      link: "mailto:panyamsathyateja@gmail.com"
     },
     {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
+      value: "+91 9502318823",
+      link: "tel:+919502318823"
     },
     {
       icon: <MapPin className="w-5 h-5" />,

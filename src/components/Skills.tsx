@@ -21,38 +21,39 @@ const Skills = () => {
     return () => observer.disconnect();
   }, []);
 
-  const skillCategories = [
-    {
-      icon: <Code2 className="w-6 h-6" />,
-      title: "Frontend",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js"]
-    },
-    {
-      icon: <Server className="w-6 h-6" />,
-      title: "Backend",
-      skills: ["Node.js", "Express", "Python", "FastAPI", "PostgreSQL"]
-    },
-    {
-      icon: <Database className="w-6 h-6" />,
-      title: "Database",
-      skills: ["MongoDB", "MySQL", "Redis", "Supabase", "Firebase"]
-    },
-    {
-      icon: <Globe className="w-6 h-6" />,
-      title: "Cloud & DevOps",
-      skills: ["AWS", "Docker", "Vercel", "Netlify", "GitHub Actions"]
-    },
-    {
-      icon: <Smartphone className="w-6 h-6" />,
-      title: "Mobile",
-      skills: ["React Native", "Flutter", "Ionic", "PWA", "Expo"]
-    },
-    {
-      icon: <GitBranch className="w-6 h-6" />,
-      title: "Tools",
-      skills: ["Git", "VS Code", "Figma", "Postman", "Webpack"]
-    }
-  ];
+ const skillCategories = [
+  {
+    icon: <Code2 className="w-6 h-6" />,
+    title: "Frontend",
+    skills: ["React.js", "HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS"]
+  },
+  {
+    icon: <Server className="w-6 h-6" />,
+    title: "Backend",
+    skills: ["Node.js", "Express.js"]
+  },
+  {
+    icon: <Database className="w-6 h-6" />,
+    title: "Database",
+    skills: ["MongoDB"]
+  },
+  {
+    icon: <Globe className="w-6 h-6" />,
+    title: "Deployment",
+    skills: ["Netlify", "Render"]
+  },
+  {
+    icon: <Smartphone className="w-6 h-6" />,
+    title: "AI / Integration",
+    skills: ["Gemini API", "REST APIs", "Axios"]
+  },
+  {
+    icon: <GitBranch className="w-6 h-6" />,
+    title: "Tools & Platforms",
+    skills: ["Git", "GitHub", "VS Code", "Figma", "Postman"]
+  }
+];
+
 
   return (
     <section id="skills" className="section-padding relative overflow-hidden">

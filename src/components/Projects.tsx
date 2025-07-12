@@ -23,35 +23,55 @@ const Projects = () => {
     return () => observer.disconnect();
   }, []);
 
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration",
-      image: "/placeholder.svg",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
-      date: "2024"
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates",
-      image: "/placeholder.svg",
-      technologies: ["Vue.js", "Express", "Socket.io", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
-      date: "2023"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather application with location-based forecasts",
-      image: "/placeholder.svg",
-      technologies: ["React", "TypeScript", "API Integration", "Charts"],
-      liveUrl: "#",
-      githubUrl: "#",
-      date: "2023"
-    }
-  ];
+ const projects = [
+  {
+    title: "Medigo – Doctor Appointment Booking Website",
+    description: "Full-stack doctor appointment booking app with RESTful APIs, optimized booking flow, and user-friendly UI.",
+    image: "medigo.png",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Axios", "Render"],
+    liveUrl: "https://medigo-frontend.onrender.com/",
+    githubUrl: "https://github.com/sathya-teja/MEDIGO",
+    date: "2025",
+    demoCredentials: "user@medigo.com / password123"
+  },
+  {
+    title: "MediGo – Admin Dashboard",
+    description: "Admin portal for managing doctors, patients, and appointments with secure access and real-time updates.",
+    image: "/medigo-admin.png",
+    technologies: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"],
+    liveUrl: "https://medigo-admin.onrender.com/",
+    githubUrl: "https://github.com/sathya-teja/MEDIGO",
+    date: "2025",
+    demoCredentials: "admin@medigo.com / admin123"
+  },
+  {
+    title: "ZORO AI",
+    description: "Lightweight chatbot built with Gemini API and React, designed with a clean UI to enhance user interaction.",
+    image: "/zoroai.png",
+    technologies: ["React.js", "HTML5", "CSS3", "JavaScript (ES6+)", "Tailwind CSS", "Axios"],
+    liveUrl: "https://zoro-ai.netlify.app/",
+    githubUrl: "https://github.com/sathya-teja/ZORO-AI",
+    date: "2024"
+  },
+  {
+    title: "iTasks App",
+    description: "Modern productivity app to manage tasks efficiently with a clean interface and local storage support.",
+    image: "/task.png",
+    technologies: ["React.js", "Tailwind CSS", "Local Storage"],
+    liveUrl: "https://itasks-app.netlify.app/",
+    githubUrl: "https://github.com/sathya-teja/iTasks",
+    date: "2024"
+  },
+  {
+    title: "IEEE SB NBKRIST Website",
+    description: "Responsive student branch website built collaboratively to showcase events, team, and updates. Integrated Chart.js for analytics and optimized performance.",
+    image: "/ieee.png",
+    technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "Chart.js"],
+    liveUrl: "https://ieeesbnbkrist2k24.netlify.app/",
+    date: "2024"
+  }
+];
+
 
   return (
     <section id="projects" className="section-padding relative overflow-hidden">
@@ -129,17 +149,20 @@ const Projects = () => {
                     </a>
                   </Button>
                   
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="flex-1 glass border-blue-400/50 text-blue-400 hover:text-white text-sm"
-                    asChild
-                  >
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-3 h-3 mr-2" />
-                      Code
-                    </a>
-                  </Button>
+                  {project.githubUrl && (
+  <Button
+    size="sm"
+    variant="outline"
+    className="flex-1 glass border-blue-400/50 text-blue-400 hover:text-white text-sm"
+    asChild
+  >
+    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+      <Github className="w-3 h-3 mr-2" />
+      Code
+    </a>
+  </Button>
+)}
+
                 </div>
               </CardContent>
             </Card>

@@ -23,41 +23,31 @@ const Experience = () => {
 
   const experiences = [
     {
-      company: "Tech Solutions Inc.",
-      position: "Senior Full Stack Developer",
-      duration: "2022 - Present",
-      location: "Remote",
-      description: "Led development of scalable web applications using React, Node.js, and cloud technologies. Mentored junior developers and implemented best practices.",
-      achievements: [
-        "Improved application performance by 40%",
-        "Led a team of 5 developers",
-        "Implemented CI/CD pipelines"
-      ]
-    },
-    {
-      company: "Digital Innovations Ltd.",
-      position: "Frontend Developer",
-      duration: "2020 - 2022",
-      location: "New York, NY",
-      description: "Developed user-facing features for e-commerce platforms with focus on performance and user experience.",
-      achievements: [
-        "Reduced page load times by 60%",
-        "Built responsive components",
-        "Collaborated with design team"
-      ]
-    },
-    {
-      company: "StartupXYZ",
-      position: "Junior Developer",
-      duration: "2019 - 2020",
-      location: "San Francisco, CA",
-      description: "Started career building web applications and learning modern development practices in a fast-paced startup environment.",
-      achievements: [
-        "Built 3 major features from scratch",
-        "Learned modern JavaScript frameworks",
-        "Contributed to open source projects"
-      ]
-    }
+  company: "Technotran Solutions",
+  position: "AI & ML Intern",
+  duration: "June 2025 - Present",
+  location: "Remote",
+  description: "Currently undergoing a short-term internship focused on Artificial Intelligence and Machine Learning using Python. Actively learning model development, data processing, and cloud integration techniques through hands-on projects.",
+  achievements: [
+    "Learning to build and evaluate ML models using Scikit-Learn",
+    "Working on image classification and NLP tasks with TensorFlow",
+    "Engaged in a real-world AI/ML capstone project (in progress)"
+  ]
+},
+
+   {
+  company: "IEEE Student Branch, NBKRIST",
+  position: "Website Contributor",
+  duration: "Sep 2024 – Oct 2024",
+  location: "On-Campus",
+  description: "Contributed to the official IEEE SB NBKRIST website, focusing on frontend development and content updates for student activities and technical events.",
+  achievements: [
+    "Developed responsive and accessible pages using HTML, CSS, and JavaScript",
+    "Collaborated with the student team to update event schedules and member listings",
+    "Ensured clean UI/UX aligned with IEEE branding standards"
+  ]
+}
+
   ];
 
   return (

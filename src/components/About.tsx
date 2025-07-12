@@ -21,23 +21,23 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
-  const highlights = [
-    {
-      icon: <Code className="w-6 h-6 text-purple-400" />,
-      title: "Clean Code Advocate",
-      description: "Writing maintainable, scalable, and efficient code that stands the test of time."
-    },
-    {
-      icon: <Palette className="w-6 h-6 text-blue-400" />,
-      title: "UI/UX Focused",
-      description: "Creating beautiful, intuitive interfaces that users love to interact with."
-    },
-    {
-      icon: <Zap className="w-6 h-6 text-pink-400" />,
-      title: "Performance Optimized",
-      description: "Building lightning-fast applications with optimal performance and SEO."
-    }
-  ];
+  // const highlights = [
+  //   {
+  //     icon: <Code className="w-6 h-6 text-purple-400" />,
+  //     title: "Clean Code Advocate",
+  //     description: "Writing maintainable, scalable, and efficient code that stands the test of time."
+  //   },
+  //   {
+  //     icon: <Palette className="w-6 h-6 text-blue-400" />,
+  //     title: "UI/UX Focused",
+  //     description: "Creating beautiful, intuitive interfaces that users love to interact with."
+  //   },
+  //   {
+  //     icon: <Zap className="w-6 h-6 text-pink-400" />,
+  //     title: "Performance Optimized",
+  //     description: "Building lightning-fast applications with optimal performance and SEO."
+  //   }
+  // ];
 
   return (
     <section id="about" className="section-padding relative overflow-hidden">
@@ -77,7 +77,7 @@ const About = () => {
               </p>
             </div>
 
-            {/* Highlights Grid */}
+            {/* Highlights Grid
             <div className="grid grid-cols-1 gap-4 mt-8">
               {highlights.map((item, index) => (
                 <div
@@ -94,7 +94,7 @@ const About = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column - Profile Image */}
@@ -102,7 +102,7 @@ const About = () => {
             <div className="relative">
               <div className="w-80 h-80 md:w-96 md:h-96 glass rounded-2xl p-4 neon-glow">
                 <img
-                  src="/placeholder.svg"
+                  src="/sathya.jpg"
                   alt="Panyam Sathya Teja - About"
                   className="w-full h-full object-cover rounded-xl hover:scale-105 transition-transform duration-500"
                 />

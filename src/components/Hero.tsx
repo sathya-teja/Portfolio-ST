@@ -49,14 +49,15 @@ const Hero = () => {
           {/* Left Column - Content */}
           <div className="space-y-6 animate-slide-left">
             <div className="space-y-4">
-              <h1 className="text-3xl md:text-5xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-5xl font-bold leading-tight will-change-transform opacity-100">
+
                 <span className="block text-white animate-slide-up">Hello, I'm</span>
                 <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-slide-up">
                   Panyam Sathya Teja
                 </span>
               </h1>
               
-              <div className="text-xl md:text-2xl text-gray-300 h-10 flex items-center">
+              <div className="text-xl md:text-2xl text-gray-300 min-h-[2.5rem] flex items-center">
                 <span className="border-r-2 border-purple-400 pr-2 animate-pulse">
                   {typedText}
                 </span>
@@ -71,22 +72,32 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-scale-in">
-              <Button
-                size="lg"
-                className="glass glass-hover neon-glow px-6 py-3 text-base font-medium group"
-              >
-                <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
-                Download CV
-              </Button>
-              
-              <Button
-                variant="outline"
-                size="lg"
-                className="glass glass-hover border-purple-400/50 text-purple-400 hover:text-white px-6 py-3 text-base font-medium group"
-              >
-                <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                Contact Me
-              </Button>
+              <a
+  href="/SathyaTeja_Resume.pdf"
+  download
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block"
+>
+  <Button
+    size="lg"
+    className="glass glass-hover neon-glow px-6 py-3 text-base font-medium group"
+  >
+    <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
+    Download CV
+  </Button>
+</a>
+              <a href="#contact" className="inline-block">
+  <Button
+    variant="outline"
+    size="lg"
+    className="glass glass-hover border-purple-400/50 text-purple-400 hover:text-white px-6 py-3 text-base font-medium group"
+  >
+    <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+    Contact Me
+  </Button>
+</a>
+
             </div>
 
             {/* Social Links */}
@@ -111,17 +122,17 @@ const Hero = () => {
           </div>
 
           {/* Right Column - Profile Image */}
-          <div className="flex justify-center lg:justify-end animate-scale-in">
+          <div className="flex justify-center lg:justify-end ">
             <div className="relative">
               {/* Synchronized animated background circle */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-blue-400 sync-float-glow scale-110" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-blue-400 " />
               
               {/* Profile image container */}
-              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full glass border-2 border-purple-400/30 overflow-hidden sync-float-glow">
+              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full glass border-4 border-purple-400/30 overflow-hidden ">
                 <img
-                  src="/placeholder.svg"
+                  src="/sathya.jpg"
                   alt="Panyam Sathya Teja"
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover "
                 />
               </div>
               
