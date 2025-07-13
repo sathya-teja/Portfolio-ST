@@ -74,7 +74,7 @@ const Projects = () => {
 
 
   return (
-    <section id="projects" className="section-padding relative overflow-hidden">
+    <section id="projects" className="section-padding min-h-screen relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-transparent to-blue-900/10" />
       

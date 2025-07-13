@@ -21,26 +21,19 @@ const About = () => {
     return () => observer.disconnect();
   }, []);
 
-  // const highlights = [
-  //   {
-  //     icon: <Code className="w-6 h-6 text-purple-400" />,
-  //     title: "Clean Code Advocate",
-  //     description: "Writing maintainable, scalable, and efficient code that stands the test of time."
-  //   },
-  //   {
-  //     icon: <Palette className="w-6 h-6 text-blue-400" />,
-  //     title: "UI/UX Focused",
-  //     description: "Creating beautiful, intuitive interfaces that users love to interact with."
-  //   },
-  //   {
-  //     icon: <Zap className="w-6 h-6 text-pink-400" />,
-  //     title: "Performance Optimized",
-  //     description: "Building lightning-fast applications with optimal performance and SEO."
-  //   }
-  // ];
+  const highlights = [
+  {
+    icon: <Code className="w-6 h-6 text-purple-400" />,
+    title: "Full Stack Expertise",
+    description: "Skilled in both frontend and backend technologies like React, Node.js, Express, and MongoDB.",
+  },
+  
+  
+];
+
 
   return (
-    <section id="about" className="section-padding relative overflow-hidden">
+    <section id="about" className="section-padding min-h-screen relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-transparent to-blue-900/10" />
       
@@ -77,7 +70,7 @@ const About = () => {
               </p>
             </div>
 
-            {/* Highlights Grid
+            {/* Highlights Grid */}
             <div className="grid grid-cols-1 gap-4 mt-8">
               {highlights.map((item, index) => (
                 <div
@@ -94,7 +87,7 @@ const About = () => {
                   </div>
                 </div>
               ))}
-            </div> */}
+            </div>
           </div>
 
           {/* Right Column - Profile Image */}

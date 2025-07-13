@@ -56,7 +56,7 @@ const Skills = () => {
 
 
   return (
-    <section id="skills" className="section-padding relative overflow-hidden">
+    <section id="skills" className="section-padding min-h-screen relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-transparent to-purple-900/10" />
       

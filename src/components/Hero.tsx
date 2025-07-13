@@ -35,7 +35,8 @@ const Hero = () => {
   ));
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden parallax-bg">
+<section id="home" className="pt-16 md:pt-0 min-h-screen relative overflow-hidden parallax-bg">
+
       {/* Floating particles */}
       <div className="absolute inset-0 pointer-events-none">
         {particles}
@@ -101,7 +102,7 @@ const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex space-x-6 animate-scale-in">
+            <div className="flex space-x-6 animate-scale-in ">
               <a
                 href="https://linkedin.com"
                 target="_blank"
@@ -125,10 +126,10 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end ">
             <div className="relative">
               {/* Synchronized animated background circle */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-blue-400 " />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-blue-400  " />
               
               {/* Profile image container */}
-              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full glass border-4 border-purple-400/30 overflow-hidden ">
+              <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full glass border-4 border-purple-400/30 overflow-hidden neon-glow ">
                 <img
                   src="/sathya.jpg"
                   alt="Panyam Sathya Teja"
