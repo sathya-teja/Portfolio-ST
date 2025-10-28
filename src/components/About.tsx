@@ -95,7 +95,7 @@ const About = () => {
             <div className="relative">
               <div className="w-80 h-80 md:w-96 md:h-96 glass rounded-2xl p-4 neon-glow">
                 <img
-                  src="/sathya.jpg"
+                  src="/sathya.png"
                   alt="Panyam Sathya Teja - About"
                   className="w-full h-full object-cover rounded-xl hover:scale-105 transition-transform duration-500"
                 />

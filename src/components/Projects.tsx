@@ -24,6 +24,16 @@ const Projects = () => {
   }, []);
 
  const projects = [
+    {
+    title: "Fashion Store – E-commerce",
+    description: "Responsive fashion e-commerce app with product catalog, cart, and checkout. Clean UI and optimized filtering/sorting.",
+    image: "/fashion-store.png", // put this image in /public
+    technologies: ["React.js", "Tailwind CSS", "Redux Toolkit", "Node.js", "Express.js", "MongoDB", "Stripe"],
+    liveUrl: "https://fashion-store-heo5.onrender.com/",   // <-- replace
+    githubUrl: "https://github.com/sathya-teja/fashion-store", // <-- replace
+    date: "2025"
+  },
+
   {
     title: "Medigo – Doctor Appointment Booking Website",
     description: "Full-stack doctor appointment booking app with RESTful APIs, optimized booking flow, and user-friendly UI.",
@@ -34,6 +44,7 @@ const Projects = () => {
     date: "2025",
     demoCredentials: "user@medigo.com / password123"
   },
+  
   {
     title: "MediGo – Admin Dashboard",
     description: "Admin portal for managing doctors, patients, and appointments with secure access and real-time updates.",
@@ -43,6 +54,15 @@ const Projects = () => {
     githubUrl: "https://github.com/sathya-teja/MEDIGO",
     date: "2025",
     demoCredentials: "admin@medigo.com / admin123"
+  },
+  {
+    title: "Heart Disease Prediction",
+    description: "ML web app that predicts heart disease risk using clinical inputs. Includes model training pipeline and on-page inference.",
+    image: "/heartsense.png", // put this image in /public
+    technologies: ["Python", "scikit-learn", "Pandas", "NumPy", "Streamlit" /* or Flask */, "Joblib"],
+    liveUrl: "https://heartsense-ai-oaqg.onrender.com/",          // <-- replace
+    githubUrl: "https://github.com/sathya-teja/heart_disease_prediction2", // <-- replace
+    date: "2025"
   },
   {
     title: "ZORO AI",

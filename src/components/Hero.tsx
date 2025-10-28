@@ -131,7 +131,7 @@ const Hero = () => {
               {/* Profile image container */}
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full glass border-4 border-purple-400/30 overflow-hidden neon-glow ">
                 <img
-                  src="/sathya.jpg"
+                  src="/sathya.png"
                   alt="Panyam Sathya Teja"
                   className="w-full h-full object-cover "
                 />
